@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  width: auto;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+/* Header styles */
+header {
+  text-align: left;
+  background-color: #FAFAFA;
+  overflow: hidden;
+  letter-spacing: 0.03em;
+}
+
+h1 {
+  font-size: 33px;
+  margin-bottom: 0;
+}
+
+header p {
+  margin-top: 0;
+}
+
+/* Styles for navigation links */
+nav {
+  letter-spacing: 0.03em;
+}
+
+nav li a:focus {
+  color: #929292;
+}
+
+/* Main styles */
+#img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+h2 {
+  letter-spacing: 0.06em;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.container-two img {
+  flex: 50%;
+}
+
+/* All images with src that ends with .svg */
+img[src$=".svg"] {
+  width: 90px;
+  height: 90px;
+  margin: 10px 0 30px;
+}
+
+/* Style for the footer */
+footer {
+  background-color: #6736CD;
+  color: #FFFFFF;
+  margin-top: 10px;
+  font-size: 17px;
+}
+
+iframe {
+  width: 100%;
+  border: 0;
+}
+
+address {
+  font-style: normal;
+  line-height: 1.5em;
+}
+
+footer p {
+  margin-top: 0;
+}
+
+footer a {
+  color: #FFFFFF;
+}
+
+hr {
+  opacity: 0.2;
+}
+
+
+/* Styles for mobile screen */
+[class*="col-"] {
+  width: 100%;
+}
+
+/* Styles for ipad screen size*/
+@media screen and (min-width: 480px) {
+  .container-two img{
+    flex: 30%;
+  }
+
+  nav li {
+    float: left;
+    padding: 0 20px 20px 0;
+  }
+
+  .padding > *:not(#img) {
+    padding: 0 60px !important;
+  }
+
+  .col-ip-1 {width: 16.66%;}
+  .col-ip-2 {width: 25%;}
+  .col-ip-3 {width: 30%;}
+  .col-ip-4 {width: 60%;}
+}
+
+
+/* Styles for laptop screen size and more */
+@media screen and (min-width: 830px) {
+  header {
+    padding: 20px 0;
+  }
+
+  .container-two {
+    margin: 20px 0;
+  }
+
+  #img {
+    height: 500px;
+  }
+
+  /* Width for the logo */
+  .container-two img{
+    flex: 25%;
+  }
+
+  .padding > *:not(#img) {
+    padding: 0 100px !important;
+  }
+
+  footer section {
+    margin: 20px;
+  }
+
+  .col-lp-1 {width: 20%;}
+  .col-lp-2 {width: 25%;}
+  .col-lp-3 {width: 30%;}
+  .col-lp-4 {width: 60%;}
+}
+
+
+/* General styles */
+h1, h2 {
+  text-transform: uppercase;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  line-height: 2em !important;
+}
+
+p {
+  line-height: 1.5em;
+  letter-spacing: 0.01em;
+}
+
+.light-brown {
+  color: #929292;
+}
+
+/* Applay padding to all elements except the background image */
+.padding > *:not(#img) {
+  padding: 0 20px;
+}
+
+.flexing {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #000000;
+}
+
+.big-font {
+  font-size: 26px;
+}
+
+.small-font {
+  font-size: 16px;
+}

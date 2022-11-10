@@ -16,6 +16,9 @@ header {
   background-color: #F6F8FA;
   padding: 20px 20px;
   overflow: hidden;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 /* Logo size */
@@ -126,6 +129,13 @@ figure {
   width: 100%;
 }
 
+/*.main-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}*/
+
+
 
 /* Styles for small screen for all html files*/
 @media screen and (min-width: 1000px) {
@@ -142,7 +152,7 @@ figure {
   .first-details>div, .second-details>div>div {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 20px;/*try use on phone too*******************/
   }
 
   .first-details > div, .second-details > div {
@@ -193,6 +203,7 @@ figure {
 }
 
 
+
 /* General styles */
 .flexing {
   display: flex;
@@ -228,3 +239,10 @@ label {
 .small-font {
   font-size: 15px;
 }
+
+
+/*.space-around {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}*/

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="main.css">
+  <title>Payment</title>
+</head>
+
+<body>
+  <!-- The heading -->
+  <header class="flexing">
+    <a href="https://www.hackyourfuture.dk/">
+      <img src="images/hyf.svg" alt="HackYourFuture Logo">
+    </a>
+
+    <!-- Navigation links-->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Contact</a></li>
+        <li><a href="preferences.html">Preferences</a></li>
+        <li><a href="#">Payment</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="padding">
+    <h1>Sign up to yourcustomtailor.com</h1>
+
+    <div>
+      <h2>Step 3/4 - Time to make payment?</h2>
+
+      <div class="space-below">
+        <!-- Progress bar -->
+        <label for="progress">Progress</label><br>
+        <progress id="progress" value="4" max="4">4/4</progress>
+      </div>
+
+      <form action="index.html" method="post">
+
+        <div class="space-below">
+          <div class="first-details">
+            <div>
+              <label for="fname">First Name*</label>
+              <input type="text" id="fname" name="fname" required>
+            </div>
+            <div>
+              <label for="lname">Last Name*</label>
+              <input type="text" id="lname" name="lname" required>
+            </div>
+            <div>
+              <label for="card-number">Credit Card Number*</label>
+              <input type="tel" id="card-number" name="card-number" pattern="[0-9]{16}" required>
+            </div>
+            <div>
+              <label for="code">Security Code*</label>
+              <input type="tel" id="code" name="code" placeholder="CVV" pattern="[0-9]{3}" required>
+            </div>
+
+            <div>
+              <label for="expire">Card Expiration*</label>
+              <input type="month" id="expire" name="expire" required>
+            </div>
+            <div>
+              <label for="pay-option">Payment Option*</label>
+              <select id="pay-option" name="pay-option" required>
+                <option disabled selected value="">-- select an option --</option>
+                <option value="debit or credit card">Debit or Credit Card</option>
+                <option value="paypal">PayPal</option>
+              </select>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="flexing space-below">
+          <!-- Resetting button-->
+          <button type="reset">Reset</button>
+
+          <!-- Linking a submit button to about.html page -->
+          <button type="submit">Complete Order</button>
+        </div>
+
+      </form>
+
+    </div>
+  </main>
+
+</body>
+
+</html>

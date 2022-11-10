@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="main.css">
+  <title>Preferences</title>
+</head>
+
+<body>
+  <!-- The heading -->
+  <header class="flexing">
+    <a href="https://www.hackyourfuture.dk/">
+      <img src="images/hyf.svg" alt="HackYourFuture Logo">
+    </a>
+
+    <!-- Navigation links-->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Contact</a></li>
+        <li><a href="#">Preferences</a></li>
+        <li><a href="payment.html">Payment</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="padding">
+    <h1>Sign up to yourcustomtailor.com</h1>
+
+    <div>
+      <h2>Step 3/4 - Time to learn about your preferences?</h2>
+
+      <!-- Progress bar -->
+      <label for="progress">Progress</label><br>
+      <progress id="progress" value="3" max="4">3/4</progress>
+
+      <p>What kind of items are you interested in offers on?</p>
+
+      <!-- Personal preferences form -->
+      <form action="./payment.html" method="post">
+        <table>
+
+          <tr>
+            <td>
+              <label for="clothes">Apparal</label>
+              <input type="checkbox" id="clothes" name="clothes" checked>
+            </td>
+
+            <td>
+              <label for="jewelry">Jewerly</label>
+              <input type="checkbox" id="jewelry" name="jewelry" checked>
+            </td>
+
+          </tr>
+
+          <tr>
+            <td>
+              <label for="accessory">Accessories</label>
+              <input type="checkbox" id="accessory" name="accessory" checked>
+            </td>
+
+            <td>
+              <label for="shoe">Shoes</label>
+              <input type="checkbox" id="shoe" name="shoe" checked>
+            </td>
+
+          </tr>
+
+          <tr>
+            <td>
+              <label for="bags">Handbags</label>
+              <input type="checkbox" id="bags" name="bags">
+            </td>
+
+            <td></td>
+
+          </tr>
+
+        </table>
+
+
+        <p>Choose the images that best resemble your style</p>
+
+        <div class="row">
+          <figure>
+            <img src="images/one.jpg" alt="Jewelry">
+            <figcaption>
+              <label for="jewelry1">Select</label>
+              <input type="checkbox" id="jewelry1" name="jewelry1" checked>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="images/two.jpg" alt="Men Shoes">
+            <figcaption>
+              <label for="men-shoes">Select</label>
+              <input type="checkbox" id="men-shoes" name="men-shoes">
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="images/three.jpg" alt="Handbags">
+            <figcaption>
+              <label for="more-bags">Select</label>
+              <input type="checkbox" id="more-bags" name="more-bags" checked>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="images/four.jpg" alt="Tshirts">
+            <figcaption>
+              <label for="tshirt">Select</label>
+              <input type="checkbox" id="tshirt" name="tshirt" checked>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="images/five.jpg" alt="Handbag">
+            <figcaption>
+              <label for="handbag">Select</label>
+              <input type="checkbox" id="handbag" name="handbag">
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="images/six.jpg" alt="Jewelry">
+            <figcaption>
+              <label for="jewelry2">Select</label>
+              <input type="checkbox" id="jewelry2" name="jewelry2">
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="images/seven.jpg" alt="High Heels Shoes">
+            <figcaption>
+              <label for="heels-shoes">Select</label>
+              <input type="checkbox" id="heels-shoes" name="heels-shoes" checked>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="images/eight.jpg" alt="Sneakers Shoes">
+            <figcaption>
+              <label for="sneakers">Select</label>
+              <input type="checkbox" id="sneakers" name="sneakers" checked>
+            </figcaption>
+          </figure>
+
+        </div>
+
+        <div class="flexing space-below">
+          <!-- Resetting button-->
+          <button type="reset">Reset</button>
+
+          <!-- Linking a submit button to about.html page -->
+          <button type="submit">Next step</button>
+        </div>
+
+      </form>
+
+    </div>
+
+  </main>
+
+</body>
+
+</html>

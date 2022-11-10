@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="main.css">
+  <title>Contact You</title>
+</head>
+
+<body>
+  <!-- The heading -->
+  <header class="flexing">
+    <a href="https://www.hackyourfuture.dk/">
+      <img src="images/hyf.svg" alt="HackYourFuture Logo">
+    </a>
+
+    <!-- Navigation links-->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="preferences.html">Preferences</a></li>
+        <li><a href="payment.html">Payment</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="padding">
+    <h1>Sign up to yourcustomtailor.com</h1>
+
+    <div>
+      <h2>Step 2/4 - how can we reach you?</h2>
+
+      <!-- Progress bar -->
+      <label for="progress">Progress</label><br>
+      <progress id="progress" value="2" max="4">2/4</progress>
+
+      <p>We will probably need to stay in touch somehow. Let us know how we can
+        reach you?</p>
+
+      <!-- Contact information form -->
+      <form action="./preferences.html" method="post">
+        <div class="space-below">
+          <div class="first-details">
+            <div>
+              <label for="email">Email*</label>
+              <input type="email" id="email" name="email" pattern="^[a-z\d._%+-]+@[a-z\d.-]+\.[a-z]{2,}$"
+               placeholder="name@example.com" required>
+            </div>
+            <div>
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" pattern="^[\d]{3}-[\d]{3}-[\d]{4}$"
+               placeholder="123-123-1234" title="123-123-1234">
+            </div>
+          </div>
+
+          <div class="second-details">
+            <div>
+              <div>
+                <label for="pwd">Password*</label>
+                <input type="password" id="pwd" name="pwd" pattern="(?=.*[a-z])(?=.*[A-Z]).{10,}"
+                 title="At least one uppercase and lowercase letters and 10 or more characters" required>
+              </div>
+              <div>
+                <label for="re-pwd">Re-enter Password*</label>
+                <input type="password" id="re-pwd" name="re-pwd" pattern="(?=.*[a-z])(?=.*[A-Z]).{10,}"
+                 title="At least one uppercase and lowercase letters and 10 or more characters" required>
+              </div>
+            </div>
+          </div>
+
+          <div id="radio">
+            <p>I want to sign up for the newsletter</p>
+                <label for="weekly">Weekly news</label>
+                <input type="radio" id="weekly" name="news" required>
+
+                <label for="monthly">Monthly news</label>
+                <input type="radio" id="monthly" name="news">
+
+                <label for="no-news">Don't send me news</label>
+                <input type="radio" id="no-news" name="news">
+          </div>
+        </div>
+
+
+        <div class="flexing space-below">
+          <!-- Resetting button-->
+          <button type="reset">Reset</button>
+
+          <!-- Linking a submit button to preferences.html page -->
+          <button type="submit">Next step</button>
+        </div>
+
+      </form>
+
+    </div>
+
+  </main>
+
+</body>
+
+</html>

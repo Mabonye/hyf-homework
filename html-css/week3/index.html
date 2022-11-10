@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="main.css">
+  <title>About You</title>
+</head>
+
+<body>
+  <!-- The heading -->
+  <header class="flexing">
+    <a href="https://www.hackyourfuture.dk/">
+      <img src="images/hyf.svg" alt="HackYourFuture Logo">
+    </a>
+
+    <!-- Navigation links-->
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="about.html">Contact</a></li>
+        <li><a href="preferences.html">Preferences</a></li>
+        <li><a href="payment.html">Payment</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="padding space-below">
+    <h1>Sign up to yourcustomtailor.com</h1>
+    <p>We can't wait to help you improve your life-style and gain the attention
+      from people around you!</p>
+    <p>Sign up below to save up to 70% on apparel, hand-bags and cosmetics.
+      Our agents are busy picking the best offers that match your preferences
+      and styles. Every week we will send you a hand-picked selection - we
+      just need to know a few details about your first...</p>
+
+    <div>
+      <h2>Step 1/4 - tell us who you are?</h2>
+
+      <!-- Progress bar -->
+      <label for="progress">Progress</label><br>
+      <progress id="progress" value="1" max="4">1/4</progress>
+
+      <p>Nice to meet you. Let's spend a minute to get to know each other?
+        Please enter the following:</p>
+
+      <!-- Personal information form -->
+      <form action="./about.html" method="post">
+
+        <div class="space-below">
+
+          <div class="first-details">
+            <div>
+              <label for="fname">First name*</label>
+              <input type="text" id="fname" name="fname" required>
+            </div>
+
+            <div>
+              <label for="lname">Last name*</label>
+              <input type="text" id="lname" name="lname" required>
+            </div>
+          </div>
+
+          <div class="second-details">
+            <div>
+              <div>
+                <label for="country">Country*</label>
+                <select id="country" name="country" required>
+                  <option disabled selected value="">-- select an option --</option>
+                  <option value="denmark">Denmark</option>
+                  <option value="tanzania">Tanzania</option>
+                  <option value="kenya">Kenya</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="first-details">
+            <div>
+              <label for="street-address">Street address*</label>
+              <input type="text" id="street-address" name="street-address" required>
+            </div>
+
+            <div>
+              <label for="postal-code">Post code*</label>
+              <input type="text" id="postal-code" name="postal-code" pattern="^(?!(0))\d{4}$"
+               title="Danish post code, only 4 numbers,
+               not starting with 0" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="new-flexing">
+          <div class="my-label">
+            <label for="description"> Profile description</label> <br>
+            <p class="small-font"><em>please provide a short description of yourself to be
+                displayed on our social community pages</em></p>
+          </div>
+
+          <div>
+            <textarea id="description" name="dexcription" rows="8" cols="80" maxlength="500"
+             placeholder="Maximum 500 characters"></textarea>
+          </div>
+        </div>
+
+        <p>Use the same address for billing and shipping? Uncheck below to fill
+          out a separate shipping address.</p>
+
+        <div class="space-below">
+          <label for="check">Shipping address</label>
+          <input type="checkbox" id="check" name="check" required>
+        </div>
+
+        <div class="flexing space-below">
+          <!-- Resetting button-->
+          <button type="reset">Reset</button>
+
+          <!-- Linking a submit button to about.html page -->
+          <button type="submit">Next step</button>
+        </div>
+
+      </form>
+
+    </div>
+
+  </main>
+
+</body>
+
+</html>

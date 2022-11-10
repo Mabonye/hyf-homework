@@ -1,0 +1,230 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1.25em;
+  letter-spacing: 0.02em;
+}
+
+
+/* Header styles for all html files */
+header {
+  background-color: #F6F8FA;
+  padding: 20px 20px;
+  overflow: hidden;
+}
+
+/* Logo size */
+header img {
+  width: 60px;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+nav a {
+  color: black;
+}
+
+nav a:hover {
+  background-color: blue;
+  color: white;
+}
+
+nav a:focus {
+  color: #929292;
+}
+
+
+/* Styles for main */
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+
+/* Progress bar styles */
+progress {
+  width: 100%;
+  border-radius: 0;
+  height: 30px;
+  margin-top: 10px;
+}
+
+
+/* Form styles */
+form {
+  width: 100%;
+}
+
+input:not([type=radio]):not([type=checkbox]):not([type=submit]), select, textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+}
+
+input:focus, textarea:focus {
+  border: 3px solid #555;
+}
+
+input[type=checkbox], input[type=radio] {
+  transform: scale(1.5);
+}
+
+/* Button styles*/
+button {
+  border: none;
+  background-color: #008000;
+  color: white;
+  padding: 15px 30px;
+  font-size: 16px;
+}
+
+/* The outline for the radio button */
+#radio > input[type=radio]{
+    outline: 1px solid #555;
+}
+
+#radio > input {
+  margin-right: 30px;
+  line-height: 2em;
+}
+
+/* Preference table style*/
+table, td, th {
+  text-align: right;
+}
+
+th, td {
+  padding: 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+figure {
+  width: 50%;
+  padding: 30px;
+  margin: 0;
+  text-align: right;
+}
+
+.row img[src$=".jpg"] {
+  width: 100%;
+}
+
+
+/* Styles for small screen for all html files*/
+@media screen and (min-width: 1000px) {
+  form {
+    width: 90%;
+  }
+
+  .first-details, .second-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .first-details>div, .second-details>div>div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .first-details > div, .second-details > div {
+    width: 50%;
+  }
+
+  label:not(#radio > label) {
+    padding: 0 10px;
+    text-align: right;
+    vertical-align: middle;
+    width: 40%;
+  }
+
+  input:not(#radio > input):not([type=checkbox]):not([type=submit]), select{
+    vertical-align: middle;
+    width: 60%;
+  }
+
+  .my-label {
+    width: 20%;
+  }
+
+  textarea {
+      width: 100%;
+  }
+
+  figure {
+    width: 25% !important;
+  }
+
+
+  /* General styles for large screens*/
+  header {
+    padding: 20px 60px;
+  }
+
+  .padding {
+    padding: 0 60px !important;
+  }
+
+  /*for textarea*/
+  .new-flexing {
+    display: flex;
+    width:90%;
+    justify-content: center;
+  }
+
+}
+
+
+/* General styles */
+.flexing {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.padding {
+  padding: 0 20px;
+}
+
+.space-below {
+  margin-bottom: 50px;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+label {
+  font-weight: 600;
+}
+
+.small-font {
+  font-size: 15px;
+}

@@ -17,7 +17,7 @@ let housePrice = volumeInMeters * 2.5 * 1000 + gardenSizeInM2[i] * 300;
 if (housePrice < housePricePaid[i]) {
     console.log(myArray[i] + " paid more");
 } else {
-    console.log(myArray[i] + " paid less")
+    console.log(myArray[i] + " paid less");
 }
 
 
@@ -29,5 +29,5 @@ housePrice = volumeInMeters * 2.5 * 1000 + gardenSizeInM2[i] * 300;
 if (housePrice < housePricePaid[i]) {
     console.log(myArray[i] + " paid more");
 } else {
-    console.log(myArray[i] + " paid less")
+    console.log(myArray[i] + " paid less");
 }

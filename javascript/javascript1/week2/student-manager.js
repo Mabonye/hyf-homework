@@ -21,11 +21,9 @@ function addStudentToClass(studentName) {
 
 }
 
-
+// Function for getting number of students in class
 function getNumberOfStudents(newArray) {
-    // You write code here
      console.log(newArray.length);
-
 }
 
 addStudentToClass("Alex");

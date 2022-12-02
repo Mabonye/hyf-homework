@@ -1,32 +1,38 @@
 const class07Students = []; //Create an empty class array
 
 function addStudentToClass(studentName) {
-    // Check if the class is full
-    if (class07Students.length < 6) {
-        if (class07Students.includes(studentName)) {
-            console.log("Student " + studentName + " is already in the class");
+
+    // Check if the studentName is filled
+    if (studentName) {
+        // Check if the class is full
+        if (class07Students.length < 6) {
+            if (class07Students.includes(studentName)) {
+                console.log("Student " + studentName + " is already in the class");
+            } else {
+                class07Students.push(studentName);
+                console.log(class07Students);
+            }
         } else {
-            class07Students.push(studentName);
-            console.log(class07Students);
+            // Add Queen to the class even if the class is full
+            if (studentName === "Queen") {
+                class07Students.push(studentName);
+                console.log(class07Students)
+            } else {
+                console.log("Cannot add more students to class 07");
+            }
         }
     } else {
-        // Add Queen to the class even if the class is full
-        if (studentName === "Queen") {
-            class07Students.push(studentName);
-            console.log(class07Students)
-        } else {
-            console.log("Cannot add more students to class 07");
-        }
+        console.log("Please enter student name");
     }
 
 }
 
 // Function for getting number of students in class
 function getNumberOfStudents(newArray) {
-     console.log(newArray.length);
+    console.log(newArray.length);
 }
 
-addStudentToClass("Alex");
+addStudentToClass();
 addStudentToClass("John");
 addStudentToClass("Mima");
 addStudentToClass("Gasper");

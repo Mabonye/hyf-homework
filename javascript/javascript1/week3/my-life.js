@@ -31,7 +31,7 @@ seriesDurations.push(
 
 
 function logOutSeriesText() {
-  // convert 80 years to minutes
+  // Convert 80 years to minutes
   let yearsToMinutes = 80 * 365 * 24 * 60;
   let sum = 0;
 

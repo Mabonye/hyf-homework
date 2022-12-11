@@ -19,17 +19,17 @@ function getNote(id) {
 
     if (!id || typeof id !== "number") {
         return "An error string";
-    } else {
-        for (let i = 0; i < notes.length; i++) {
-            if (notes[i].id === id) {
-                return notes[i];
-            }
-        }
-        return "The id is not in any object";
     }
+
+    for (let i = 0; i < notes.length; i++) {
+        if (notes[i].id === id) {
+            return notes[i];
+        }
+    }
+    return "The id is not in any object";
 }
 
-const firstNote = getNote(2);
+const firstNote = getNote(7);
 console.log(firstNote); // {content: 'Pick up groceries', id: 1}
 
 
@@ -48,15 +48,8 @@ logOutNotesFormatted();
 // Additional function for deleting specific note using id
 function deleteObjectWithId(arr, id) {
     const objIdIndex = arr.findIndex((obj) => obj.id === id);
-
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i].id === id && typeof arr[i].id === "number") {
-            arr.splice(objIdIndex, 1); // Remove the object with objIdIndex
-            return arr;
-        }
-    }
-    console.log("The id is not in the object");
-
+    arr.splice(objIdIndex, 1); // Remove the object with objIdIndex
+    return arr;
 }
 
-console.log(deleteObjectWithId(notes, 2));
+console.log(deleteObjectWithId(notes, 3));

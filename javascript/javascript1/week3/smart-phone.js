@@ -3,7 +3,7 @@ const date = new Date().toLocaleDateString();
 
 // Function for adding activity into array
 function addActivity(activity, duration) {
-    if (typeof date === "string" && typeof activity === "string" && typeof duration === "number") {
+    if (typeof activity === "string" && typeof duration === "number") {
         activities.push({
             "date": date,
             "activity": activity,
@@ -21,20 +21,20 @@ addActivity("Dramacool", 40);
 console.log(activities);
 
 
-function showStatus(myArray) {
+function showStatus() {
     let totalTime = 0;
-    if (myArray && myArray === activities) {
-        for (let i = 0; i < myArray.length; i++) {
-            totalTime += myArray[i].duration;
+    if (activities) {
+        for (let i = 0; i < activities.length; i++) {
+            totalTime += activities[i].duration;
         }
-        console.log(`You have added ${myArray.length} activities. They amount to ${totalTime} min. of usage`);
+        console.log(`You have added ${activities.length} activities. They amount to ${totalTime} min. of usage`);
         return totalTime;
     } else {
         console.log("Add some activities before calling showStatus");
     }
 }
 
-showStatus(activities);
+//showStatus();
 
 
 // Function for setting limit to smartphone usage

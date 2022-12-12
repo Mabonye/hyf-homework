@@ -69,7 +69,7 @@ form {
   width: 100%;
 }
 
-input:not([type=radio]):not([type=checkbox]):not([type=submit]), select, textarea {
+input[type=text], input[type=email], input[type=month], input[type=tel], input[type=number], input[type=password], select, textarea {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;

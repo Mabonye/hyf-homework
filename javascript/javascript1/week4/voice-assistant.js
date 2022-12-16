@@ -70,8 +70,9 @@ function getReply(command) {
         } else if (command.includes("timer") && command.includes("minutes")) {
             word = commandArr.indexOf("minutes");
             setTimeout(() => { 
-                console.log(`Timer set for ${commandArr[word - 1]} minutes`); 
+                console.log("Timer Done"); 
             }, commandArr[word - 1] * 60 * 1000);
+            return `Timer set for ${commandArr[word - 1]} minutes`;
 
         // End conversation with voice assistant 
         } else if (command.includes("bye") || command.includes("stop")) {
